@@ -1,7 +1,10 @@
 import React from 'react'
+import SportMain from './Sport/SportMain'
 
 export const Sport = () => {
   return (
-    <div>Sport</div>
+    <div>
+      <SportMain />
+    </div>
   )
 }

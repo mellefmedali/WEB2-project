@@ -23,9 +23,9 @@ function Home() {
       <br />
     </section>
 <section className='home'>
-  <Link to='/sport'><img src='./images/sportHome.jpg'/></Link>
-  <Link to='/industrie'><img src='./images/indusHome.jpg'/></Link>
-  <Link to='/decoration'><img src='./images/decoHome.jpg'/></Link>
+  <Link to='/sport'><img src='./images/sportHome.jpg'/>Découvrir</Link>
+  <Link to='/industrie'><img src='./images/indusHome.jpg'/>Découvrir</Link>
+  <Link to='/decoration'><img src='./images/decoHome.jpg'/>Découvrir</Link>
 </section>
 
 </>

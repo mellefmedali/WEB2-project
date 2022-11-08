@@ -1,7 +1,17 @@
-/* footer */
+/*___________________________ footer */
 
 .footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+
+/*_______________________ sports main */
+.mainSport{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
 }
