@@ -6,6 +6,7 @@ import { Sport } from './components/Sport';
 import { Routes, Route } from 'react-router-dom';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/*' element={<div>404... Not Found</div>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

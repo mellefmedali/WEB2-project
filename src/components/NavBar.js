@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom'
-import logo from "../data/logo50x60.jpg"
 
 function NavbarC() {
     return (
@@ -13,8 +12,7 @@ function NavbarC() {
             <Navbar bg="light" expand="md" className="mb-3">
                 <Container fluid>
                     <Link className='btn' to="/">
-                        
-                        <img src={logo} alt="logo50x60.jpg"/>
+                        <img src='./images/icons/logo941x1147transparent.png' alt="logo50x60.jpg" height={'30px'}/>
                         <span className='tw'>TWEMMAN</span>
                     </Link>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
