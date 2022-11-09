@@ -1,7 +1,7 @@
 import React from 'react'
 import SportArticle from './SportArticle'
-import data from '../Sport/SportArticleList.json'
-import '../Components.css'
+import data from './SportArticleList.json'
+import '../sport.css'
 import { v4 as uuidv4 } from 'uuid'
 
 const SportArticles = () => {

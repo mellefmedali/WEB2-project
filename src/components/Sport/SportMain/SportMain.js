@@ -1,17 +1,15 @@
-import '../Components.css'
 import News from './News';
 import React, { useState } from 'react'
 import axios from "axios";
-import MatchDetails from './MatchDetails';
-import { useSelector, useDispatch } from 'react-redux'
-import { updateMatchs } from '../../store/matchsSlice';
-import { v4 as uuidv4 } from 'uuid'
-import '../Components.css'
+import { useDispatch } from 'react-redux'
+import { updateMatchs } from '../../../store/matchsSlice';
+import '../sport.css'
+import SportCarousel from './SportCarousel'
+import FilterByType from './FilterByType'
 
 const SportMain = () => {
 
     const [data, setData] = useState([])
-    // const matchs = useSelector((state) => state.matchs)
     const dispatch = useDispatch()
     const options = {
         method: 'GET',
@@ -33,21 +31,13 @@ const SportMain = () => {
 
     return (
         <div className='mainSport'>
-            <div>Type of equipments
-                <ul>
-                    <li>Musculation</li>
-                    <li>Fitness</li>
-                    <li>Loisirs et Jeux</li>
-                </ul>
-            </div>
-            <div>Caroussel</div>
-            <div>
-                <div className="newsSport">
-                    <h6 onClick={matchsHandler}>
-                        Upcoming Matches <img src='./images/icons/refreshIcon.png' height='15px' />
-                    </h6>
-                    <News />
-                </div>
+            <FilterByType />
+            <SportCarousel />
+            <div className="newsSport">
+                <h6 onClick={matchsHandler}>
+                    Upcoming Matches <img src='./images/icons/refreshIcon.png' height='15px' />
+                </h6>
+                <News />
             </div>
         </div>
     )

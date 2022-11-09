@@ -1,21 +1,31 @@
 [
     {"source":"./images/sportShowroom/bancAjustable480.jpg",
     "title":"Banc Ajustable Pro",
-    "description":"description de l'article"
+    "description":"description de l'article",
+    "type":"musculation",
+    "prix":"100"
 },
 {"source":"./images/sportShowroom/bancAjustable4801.jpg",
     "title":"Banc Ajustable Semi-Pro",
-    "description":"description de l'article"
+    "description":"description de l'article",
+    "type":"fitness",
+    "prix":"100"
 },
 {"source":"./images/sportShowroom/outdoor480.jpg",
     "title":"Circuit Workout",
-    "description":"description de l'article"
+    "description":"description de l'article",
+    "type":"loisirs",
+    "prix":"100"
 },
 {"source":"./images/sportShowroom/supportBarre480.jpg",
     "title":"Support Barre",
-    "description":"description de l'article"
+    "description":"description de l'article",
+    "type":"musculation",
+    "prix":"100"
 },{"source":"./images/sportShowroom/bancPlat480.jpg",
 "title":"Banc Plat",
-"description":"description de l'article"
+"description":"description de l'article",
+"type":"fitness",
+"prix":"100"
 }
 ]

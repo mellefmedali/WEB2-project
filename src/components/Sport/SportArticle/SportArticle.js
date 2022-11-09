@@ -1,7 +1,6 @@
-import '../Components.css'
+import '../sport.css'
 
 const SportArticle = (list) => {
-    // console.log(list)
     return (
         <div className='sportArticle'>
             <h6>{list.title}</h6>
