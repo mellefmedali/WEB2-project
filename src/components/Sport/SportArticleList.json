@@ -1,30 +1,21 @@
 [
     {"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 1",
+    "title":"Banc Ajustable Pro",
     "description":"description de l'article"
 },
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 2",
+{"source":"./images/sportShowroom/bancAjustable4801.jpg",
+    "title":"Banc Ajustable Semi-Pro",
     "description":"description de l'article"
 },
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 3",
+{"source":"./images/sportShowroom/outdoor480.jpg",
+    "title":"Circuit Workout",
     "description":"description de l'article"
 },
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 4",
+{"source":"./images/sportShowroom/supportBarre480.jpg",
+    "title":"Support Barre",
     "description":"description de l'article"
-},
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 5",
-    "description":"description de l'article"
-},
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 6",
-    "description":"description de l'article"
-},
-{"source":"./images/sportShowroom/bancAjustable480.jpg",
-    "title":"titre 7",
-    "description":"description de l'article"
+},{"source":"./images/sportShowroom/bancPlat480.jpg",
+"title":"Banc Plat",
+"description":"description de l'article"
 }
 ]

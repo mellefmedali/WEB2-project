@@ -1,17 +1,59 @@
 /*___________________________ footer */
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-
 /*_______________________ sports main */
-.mainSport{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: antiquewhite;
+.mainSport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+}
+
+/* sport Article */
+.sportArticle {
+  margin: 20px;
+  box-shadow: 2px 2px 2px gray;
+  width: 200px;
+}
+.articleImage {
+  height: 150px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px 1px rgb(146, 144, 255);
+}
+.articleImage:hover {
+  transform: scale(105%);
+}
+
+/* -----------------sport.js */
+.sportList {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.newsSport {
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.news {
+  background-color: lightcoral;
+}
+.matchDetails {
+  border: 1px solid black;
+  margin: 2px;
+}
+.matchDetails p {
+  padding: 0px;
+  margin: 0px;
+}
+.matchDetails h6 {
+  color: darkblue;
+  margin-bottom: 2px;
 }
