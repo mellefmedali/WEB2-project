@@ -1,0 +1,20 @@
+This project will be a website for and industrial company.
+It will contain commun header (navbar) and footer for all the routes.
+The main routes will be :
+1- Home : contain the about section and 3 images to direct the user for the rest three routes below.
+2- Sport : it contains:
+	2-1 :upper section that shows :
+		2-1-a : filter for the articles by type
+		2-1-b : carousel for some products
+		2-1-c : news extracted from a free API about the next matchs if the next few day
+	2-2: product list section containing all the products extracted from a local json file
+		the user can add an article in his cart, the total will be saved in a general state in the store.
+3- Industrie : Only a simple presentation
+4- Decoration : almost the same as the sport section
+
+the main used skills in this project will be :
+Web1 skills
+Routes
+Redux
+API
+Hooks (useState, useEffect)
