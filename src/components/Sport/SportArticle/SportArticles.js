@@ -9,7 +9,7 @@ const SportArticles = () => {
         <div>
             <div className='sportList'>
                 {
-                    data.map(e => <SportArticle key={uuidv4()} title={e.title} source={e.source} description={e.description} />)
+                    data.map(e => <SportArticle key={uuidv4()} list= {e} />)
                 }
             </div>
         </div>

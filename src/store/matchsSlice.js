@@ -16,7 +16,6 @@ const matchsSlice = createSlice({
     initialState,
     reducers: {
         updateMatchs:(state, action) => action.payload
-        
     }
 });
 
