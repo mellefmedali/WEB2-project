@@ -15,7 +15,7 @@ const FilterByType = () => {
         dispatch(setFilterBy(event.target.name))
         console.log(String(type)) //OK
         setFilter(type)
-        dispatch(filterList(filter))
+        dispatch(filterList("musculation"))
         // console.log(filteredList)
     }
     return (

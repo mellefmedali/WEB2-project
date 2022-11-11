@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = ""
+const initialState = "fitness"
 
 const filterType = createSlice({
     name:"filterType",
     initialState: initialState,
     reducers:{
-        setFilterBy: (state,action)=>state=action.payload
+        setFilterBy: (state,action)=>action.payload
         }
 })
 
