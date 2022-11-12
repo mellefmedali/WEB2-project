@@ -8,7 +8,7 @@ function CartDetails() {
   console.log(cartItems)
   return (
     <div >
-      <h5>Détails du chariot</h5>
+      <h5 className='mb-3'>Détails du chariot</h5>
       <div className='d-flex justify-content-center'>
         <table >
           <tr className='border-bottom'>
@@ -24,7 +24,7 @@ function CartDetails() {
               )
             }
           )}
-          <tr>
+          <tr className='border-top'>
             <th>Total Chariot </th> <th></th> <th>{somme}</th>
           </tr>
         </table>
