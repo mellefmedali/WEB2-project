@@ -13,7 +13,7 @@ const FilterByType = () => {
     const type = useSelector(state=>state.filterBy)
     const handleClick=(event)=>{
         dispatch(setFilterBy(event.target.name)) //fitness type
-        dispatch(filterList(type)) // filter suivant fitness
+        dispatch(filterList(event.target.name)) // filter suivant fitness
         setFiltered(true)
     }
     const handleSearch=(e)=>{
