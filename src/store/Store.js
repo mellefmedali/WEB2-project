@@ -7,8 +7,10 @@ import setFilterByReducer from './filterTypeSlice'
 export default configureStore({
     reducer:{
         matchs : updateMatchReducer,
+
         cartItems : addItemReducer,
         filteredList : filterListReducer,
+        
         filterBy : setFilterByReducer
     }
 })

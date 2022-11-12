@@ -16,7 +16,7 @@
 {"source":"./images/sportShowroom/outdoor480.jpg",
     "title":"Circuit Workout",
     "description":"description de l'article",
-    "type":"loisirs",
+    "type":"loisir",
     "prix":"100",
     "stock" : 10
 },

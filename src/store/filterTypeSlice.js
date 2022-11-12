@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = "fitness"
+const initialState = ""
 
 const filterType = createSlice({
     name:"filterType",

@@ -26,11 +26,11 @@ function NavbarC() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Link to="/sport" className='btn'>Sport</Link>
-                                <Link to="/industrie" className='btn'>Industrie</Link>
-                                <Link to="/decoration" className='btn'>Décoration</Link>
-                                <Link to="/contact" className='btn'>Contact</Link>
+                            <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
+                                <Link to="/sport" className='btn btn-outline-primary'>Sport</Link>
+                                <Link to="/industrie" className='btn btn-outline-primary'>Industrie</Link>
+                                <Link to="/decoration" className='btn btn-outline-primary'>Décoration</Link>
+                                <Link to="/contact" className='btn btn-outline-primary'>Contact</Link>
                             </Nav>
                             <CartButton/>
                         </Offcanvas.Body>

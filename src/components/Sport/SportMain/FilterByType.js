@@ -3,21 +3,32 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilterBy } from '../../../store/filterTypeSlice';
-import { filterList } from '../../../store/filteredListSlice';
+import { filterList, filterListByTitle } from '../../../store/filteredListSlice';
 
 
 const FilterByType = () => {
+    const [filtered, setFiltered] = useState(false)
+    const [searchPlaceHolder, setSearchPlaceHolder] = useState("")
     const dispatch = useDispatch()
     const type = useSelector(state=>state.filterBy)
-    const filteredList = useSelector(state=>state.filteredList)
-    const [filter, setFilter] = useState("")
     const handleClick=(event)=>{
-        dispatch(setFilterBy(event.target.name))
-        console.log(String(type)) //OK
-        setFilter(type)
-        dispatch(filterList("musculation"))
-        // console.log(filteredList)
+        dispatch(setFilterBy(event.target.name)) //fitness type
+        dispatch(filterList(type)) // filter suivant fitness
+        setFiltered(true)
     }
+    const handleSearch=(e)=>{
+        // setSearchPlaceHolder=e.target.value
+        dispatch(filterListByTitle(e.target.value))
+        setFiltered(true)
+    }
+
+    const resetList=()=>{
+        dispatch(filterListByTitle(""))
+        dispatch(setFilterBy(""))
+        setFiltered(false)
+        setSearchPlaceHolder=""
+    }
+
     return (
         <div>
             <div className="d-flex-column filterByType">
@@ -29,11 +40,14 @@ const FilterByType = () => {
                 <Form className="d-flex-column">
                     <Form.Control
                         type="search"
-                        placeholder="Search"
+                        // value={searchPlaceHolder}
+                        placeholder="Search in titles"
                         className="me-2 d-flex"
                         aria-label="Search"
+                        onChange={handleSearch}
                     />
-                    <Button variant="outline-success">Search</Button>
+                    {/* <Button variant="outline-success">Search</Button> */}
+                    <Button variant="outline-danger" onClick={resetList} style={{visibility:filtered?"visible":"hidden"}}>Cancel Filter</Button>
                 </Form>
             </div>
         </div>
