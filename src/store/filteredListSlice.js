@@ -7,7 +7,6 @@ const filteredList = createSlice({
     reducers:{
         filterList: (state,action) => articleList.filter(e=>e.type==action.payload),
         filterListByTitle: (state,action) => articleList.filter(e=>e.title.toLowerCase().includes(action.payload.toLowerCase()))
-
         }
 })
 
