@@ -48,7 +48,7 @@ function CartDetails() {
             {somme == 0 ?
               <tr>
                 <th></th>
-                <th>You don't have any element in your cart yet</th>
+                <th className='text-danger'>You don't have any element in your cart yet</th>
                 <th></th>
                 <th></th>
               </tr>
