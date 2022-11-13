@@ -7,10 +7,7 @@ import { additem } from '../../../store/cartSlice';
 function SportArticle({ list }) {
     const dispatch = useDispatch()
     const cartItems = useSelector(state => state.cartItems)
-
     const handleclick = () => {dispatch(additem(list))}
-
-    console.log(cartItems)
     const newArr= cartItems.filter((e)=>e.id==list.id).length
     return (
         <Card className='sportArticle'>
@@ -26,7 +23,7 @@ function SportArticle({ list }) {
                 }
             </Card.Body>
             <Card.Footer className='m-0 p-0'>
-                <Button className='m-0 rounded-bottom' style={{width:"100%"}} variant="primary" onClick={handleclick}>Add</Button>
+                <Button className='m-0 rounded-bottom' style={{width:"100%"}} variant="primary" onClick={handleclick}>Add to cart</Button>
             </Card.Footer>
         </Card>
     );

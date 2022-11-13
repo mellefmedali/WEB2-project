@@ -32,8 +32,37 @@
   flex-wrap: wrap;
   justify-content:space-around;
 }
-.home img{
-  max-height: 300px;
-  max-width: 300px;
-  margin: 5px;
+.categorie{
+  height: 300px;
+  width: 300px;
+}
+.categorie:hover{
+  opacity: 50%;
+  border: 5px solid black;
+}
+.subcategorie{
+  width: 100%;
+  height: 100%;
+  padding-top: 25%;
+  /* top:50%; */
+  opacity: 0;
+}
+.categorie:hover .subcategorie{
+  color: white;
+  /* background-color: grey; */
+  font-weight: bolder;
+  font-size: x-large;
+  opacity: 100%;
+}
+.sport{
+  background-image: url('../public/images/sportHome.jpg');
+  background-size:cover;
+}
+.industrie{
+  background-image: url('../public/images/indusHome.jpg');
+  background-size:cover;
+}
+.decoration{
+  background-image: url('../public/images/decoHome.jpg');
+  background-size:cover;
 }
