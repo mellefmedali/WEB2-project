@@ -1,5 +1,5 @@
 import News from './News';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from "axios";
 import { useDispatch } from 'react-redux'
 import { updateMatchs } from '../../../store/matchsSlice';
@@ -26,16 +26,21 @@ const SportMain = () => {
 
     const matchsHandler = () => {
         console.log("click!")
-        dispatch(updateMatchs(data))
+        // dispatch(updateMatchs(data))
     }
+    
+    useEffect(() => {
+        dispatch(updateMatchs(data))
+    }, [data])
+    
 
     return (
         <div className='mainSport'>
             <FilterByType />
             <SportCarousel />
             <div className="newsSport">
-                <h6 onClick={matchsHandler}>
-                    Upcoming Matches <img src='./images/icons/refreshIcon.png' height='15px' />
+                <h6 >
+                    Upcoming Matches
                 </h6>
                 <News />
             </div>

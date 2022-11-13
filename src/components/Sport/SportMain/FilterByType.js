@@ -10,10 +10,10 @@ const FilterByType = () => {
     const [filtered, setFiltered] = useState(false)
     const [searchPlaceHolder, setSearchPlaceHolder] = useState("")
     const dispatch = useDispatch()
-    const type = useSelector(state=>state.filterBy)
+    // const type = useSelector(state=>state.filterBy)
     const handleClick=(event)=>{
-        dispatch(setFilterBy(event.target.name)) //fitness type
-        dispatch(filterList(type)) // filter suivant fitness
+        // dispatch(setFilterBy(event.target.name)) //fitness type
+        dispatch(filterList(event.target.name)) // filter suivant fitness
         setFiltered(true)
     }
     const handleSearch=(e)=>{
