@@ -6,20 +6,12 @@ import { v4 as uuidv4 } from 'uuid'
 import { useSelector} from 'react-redux'
 
 const SportArticles = () => {
-    const [list, setList] = useState([])
     const data = useSelector(state => state.filteredList)
-    
-
-    useEffect(() => {
-        console.log(data)
-      setList(data)
-    }, [data])
-    
 
     return (
         <div>
             <div className='sportList'>
-                {list.map(e => <SportArticle key={uuidv4()} list= {e} />)}
+                {data.map(e => <SportArticle key={uuidv4()} list= {e} />)}
             </div>
         </div>
     )
