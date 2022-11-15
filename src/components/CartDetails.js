@@ -22,7 +22,7 @@ function CartDetails() {
             <tr className='border-bottom'>
               <th><h5>Article N°:</h5></th>
               <th><h5>Article</h5></th>
-              <th><h5>Quantité</h5></th>
+              {/* <th><h5>Quantité</h5></th> */}
               <th><h5>Prix TTC Dt</h5></th>
             </tr>
           </thead>
@@ -35,7 +35,7 @@ function CartDetails() {
                   <tr id={i} key={i}>
                     <td>{i + 1}</td>
                     <td>{e.title}</td>
-                    <td>{e.cartQte}</td>
+                    {/* <td>{e.cartQte}</td> */}
                     <td>{e.prix}</td>
                     <td><button onClick={(e) => handleDeleteItem(e, i)}>x</button></td>
                   </tr>
@@ -49,7 +49,7 @@ function CartDetails() {
               <tr>
                 <th></th>
                 <th className='text-danger'>You don't have any element in your cart yet</th>
-                <th></th>
+                {/* <th></th> */}
                 <th></th>
               </tr>
               :

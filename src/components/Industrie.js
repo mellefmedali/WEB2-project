@@ -18,11 +18,11 @@ const Industrie = () => {
         <p> Notre expertise permet de répondre à des besoins spécifiques et complexes pour les clients issus de
           secteurs d’activités diverses</p>
       </div>
-      <div className='d-grid md-2'>
-      <img src='./images/industrie/indus01.jpg' style={{width:"auto", height:'270px'}}/>
-      <img src='./images/industrie/indus02.jpg' style={{width:"auto", height:'270px'}}/>
-      <img src='./images/industrie/indus03.jpg' style={{width:"auto", height:'270px'}}/>
-      <img src='./images/industrie/indus04.jpg' style={{width:"auto", height:'270px'}}/>
+      <div className='d-flex flex-wrap'>
+      <img className='shadow p-2 mb-5 bg-white rounded' src='./images/industrie/indus01.jpg' style={{width:"auto", height:'270px'}}/>
+      <img className='shadow p-2 mb-5 bg-white rounded' src='./images/industrie/indus02.jpg' style={{width:"auto", height:'270px'}}/>
+      <img className='shadow-sm p-2 mb-5 bg-white rounded' src='./images/industrie/indus03.jpg' style={{width:"auto", height:'270px'}}/>
+      <img className='shadow-sm p-2 mb-5 bg-white rounded' src='./images/industrie/indus04.jpg' style={{width:"auto", height:'270px'}}/>
       </div>
     </div>
   )
