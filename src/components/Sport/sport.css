@@ -5,8 +5,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* background-color: antiquewhite; */
-    height: 200px;
+    height: 260px;
     box-shadow: 1px 5px 10px lightblue;
     margin-bottom:20px
   }

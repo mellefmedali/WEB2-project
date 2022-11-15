@@ -5,7 +5,8 @@
     "description":"Banc ajustable à usage professionnel. Ideal pour les salles de fitness et les coach privé",
     "type":"musculation",
     "prix":590,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "pro"
 },
 {"id":1,
     "source":"./images/sportShowroom/bancAjustable4801.jpg",
@@ -13,7 +14,8 @@
     "description":"Banc ajustable à usage domestique. Contient 5 niveaux. Idéal pour les entrainements à la maison pour des niveaux avancés ou débutant",
     "type":"fitness",
     "prix":390,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "semipro"
 },
 {"id":2,
     "source":"./images/sportShowroom/outdoor480.jpg",
@@ -21,7 +23,8 @@
     "description":"Circuit workout 3x3m, idéal pour usage proffesionnel",
     "type":"loisir",
     "prix":2890,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "pro"
 },
 {"id":3,
     "source":"./images/sportShowroom/supportBarre480.jpg",
@@ -29,7 +32,8 @@
     "description":"en deux pièces séparées, et à 10 niveaux pour la pose de barre. hauteur 150cm",
     "type":"musculation",
     "prix":240,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "semipro"
 },
 {"id":4,
     "source":"./images/sportShowroom/bancPlat480.jpg",
@@ -37,7 +41,8 @@
 "description":"Banc plat à usage domestique. Idéal pour les entrainements à la maison pour des niveaux avancés ou débutant",
 "type":"fitness",
 "prix":290,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "semipro"
 },
 {"id":5,
     "source":"./images/sportShowroom/bancPlat1480.jpeg",
@@ -45,7 +50,8 @@
 "description":"Banc plat à usage professionnel. Idéal pour les salles de sport ou les coach privés",
 "type":"musculation",
 "prix":590,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "pro"
 },
 {"id":6,
     "source":"./images/sportShowroom/barreFixe480.jpg",
@@ -53,7 +59,8 @@
 "description":"à fixation murale",
 "type":"fitness",
 "prix":99,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "semipro"
 },
 {"id":7,
     "source":"./images/sportShowroom/barreFixeMurale.jpg",
@@ -61,7 +68,8 @@
 "description":"à fixation murale, et démontable. Utilisé pour les dips et les abdominaux aussi",
 "type":"fitness",
 "prix":299,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "semipro"
 },
 {"id":8,
     "source":"./images/sportShowroom/chaiseRomaine.jpg",
@@ -69,7 +77,8 @@
 "description":"ou Power Tower, pour plus de flexibilité et de liberté en exerçant les pull ups",
 "type":"fitness",
 "prix":890,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "pro"
 },
 {"id":9,
     "source":"./images/sportShowroom/supportguidee.jpg",
@@ -77,6 +86,7 @@
 "description":"repose barre pour usage professionnel",
 "type":"musculation",
 "prix":100,
-    "cartQte" : 0
+    "cartQte" : 0,
+    "gamme" : "pro"
 }
 ]
