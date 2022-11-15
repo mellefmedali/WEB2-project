@@ -1,0 +1,50 @@
+[
+    {"id":0,
+    "source":"./images/deco/decoProduct (1).jpg",
+    "title":"Escalier Intérieur",
+    "description":"description de l'article",
+    "prix":3500
+},
+{"id":1,
+"source":"./images/deco/decoProduct (2).jpg",
+"title":"Etagère Mural",
+"description":"description de l'article",
+"prix":290
+},
+{"id":2,
+"source":"./images/deco/decoProduct (3).jpg",
+"title":"Table de réunion de Directon",
+"description":"description de l'article",
+"prix":1950
+},
+{"id":1,
+"source":"./images/deco/decoProduct (4).jpg",
+"title":"X Table salle à manger",
+"description":"description de l'article",
+"prix":1290
+},
+{"id":1,
+"source":"./images/deco/decoProduct (5).jpg",
+"title":"Table de salle à manger",
+"description":"description de l'article",
+"prix":2090
+},
+{"id":1,
+"source":"./images/deco/decoProduct (6).jpg",
+"title":"Table basse allongé",
+"description":"description de l'article",
+"prix":390
+},
+{"id":1,
+"source":"./images/deco/decoProduct (7).jpg",
+"title":"Table salon à tiroir",
+"description":"description de l'article",
+"prix":490
+},
+{"id":1,
+"source":"./images/deco/decoProduct (8).jpg",
+"title":"Table d'entré principale",
+"description":"description de l'article",
+"prix":390
+}
+]
