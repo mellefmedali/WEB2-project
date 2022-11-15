@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className="w-90 m-4">
+    <div className="w-auto m-4">
       <section >
         <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
         <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
@@ -40,7 +40,7 @@ function Contact() {
                 <div className="col-md-12">
 
                   <div className="md-form">
-                    <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+                    <textarea type="text" id="message" name="message" rows="5" className="form-control md-textarea"></textarea>
                     <label htmlFor="message">Your message</label>
                   </div>
 

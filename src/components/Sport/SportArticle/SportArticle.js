@@ -45,7 +45,7 @@ function SportArticle({ list }) {
             <Card.Body className='d-flex flex-column'>
                 <Card.Title className="mb-auto">{list.title}</Card.Title>
                 <Card.Text className="mb-auto">{list.description}</Card.Text>
-                <Card.Text className="mb-auto">Prix (DT): {list.prix}</Card.Text>
+                <Card.Text className="mb-auto">Prix (DT): <span className='fw-bold'>{list.prix}</span></Card.Text>
                 {newArr ?
                     <Card.Text className='fst-italic mt-auto p-0 text-secondary'>Already {newArr} in your cart</Card.Text>
                     :
