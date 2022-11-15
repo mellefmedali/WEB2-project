@@ -10,23 +10,23 @@ function SportArticle({ list }) {
     const newArr = cartItems.filter((e) => e.id == list.id).length
     const [indexCopy, setIndexCopy] = useState(0)
     const handleclick = () => {
-        if (cartItems.find((e, index) => e.id == list.id)) {
-            console.log("find one")
-            console.log("list qte",list.cartQte)
-            // setIndexCopy(cartItems.find((e, index) => index==list.id))
-            console.log("cart Items qte", cartItems[list.id].cartQte)
-            dispatch(additem({
-                id: list.id,
-                source: list.source,
-                title: list.title,
-                description: list.description,
-                type: list.type,
-                prix: list.prix,
-                cartQte: cartItems[list.id].cartQte + 1
-            }))
-            dispatch(deleteitem(cartItems.findIndex((e) => e.title==list.title)))
-        }
-        else {
+        // if (cartItems.find((e, index) => e.id == list.id)) {
+        //     console.log("find one")
+        //     console.log("list qte",list.cartQte)
+        //     // setIndexCopy(cartItems.find((e, index) => index==list.id))
+        //     console.log("cart Items qte", cartItems[list.id].cartQte)
+        //     dispatch(additem({
+        //         id: list.id,
+        //         source: list.source,
+        //         title: list.title,
+        //         description: list.description,
+        //         type: list.type,
+        //         prix: list.prix,
+        //         cartQte: cartItems[list.id].cartQte + 1
+        //     }))
+        //     dispatch(deleteitem(cartItems.findIndex((e) => e.title==list.title)))
+        // }
+        // else {
             dispatch(additem({
                 id: list.id,
                 source: list.source,
@@ -36,7 +36,7 @@ function SportArticle({ list }) {
                 prix: list.prix,
                 cartQte: 1
             }))
-        }
+        // }
     }
 
     return (
