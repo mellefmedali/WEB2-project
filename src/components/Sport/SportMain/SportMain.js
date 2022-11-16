@@ -35,7 +35,7 @@ const SportMain = () => {
     
 
     return (
-        <div className='mainSport'>
+        <div className='mainSport pt-2'>
             <FilterByType />
             <SportCarousel />
             <div className="newsSport">

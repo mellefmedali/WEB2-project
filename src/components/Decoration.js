@@ -16,8 +16,8 @@ const Decoration = () => {
             <span className='tw'>TWEMMAN</span> est en mesure de répondre aux demandes et besoins spécifiques de notre clientèle que que ce soit leurs idée: traditionelles ou follement originales.
           </p>
         </div>
-        <div className='d-flex flex-wrap'>
-<DecoArticles/>
+        <div>
+          <DecoArticles />
         </div>
       </div>
     </div>

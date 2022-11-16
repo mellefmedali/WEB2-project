@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import  Dropdown  from 'react-bootstrap/Dropdown';
+import Dropdown from 'react-bootstrap/Dropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilterBy } from '../../../store/filterTypeSlice';
 import { filterList, filterListByTitle, filterListGamme } from '../../../store/filteredListSlice';
@@ -32,37 +32,38 @@ const FilterByType = () => {
         dispatch(setFilterBy(""))
         setFiltered(false)
         setFilterVal("")
-        setSearchPlaceHolder ("")
+        setSearchPlaceHolder("")
     }
 
-    const toggleFilter = (e) =>{
+    const toggleFilter = (e) => {
         setFilterVal(e.target.name)
-        console.log(e.target.name)
     }
 
     return (
         <div>
             <div className="d-flex-column filterByType">
-                <Dropdown className='mb-2'>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Filter By {filterVal}
+                <Dropdown className='d-grid mb-2'>
+                    <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                        {filterVal==""?"Choose Filter":`Filter By ${filterVal}`}
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
                         <Dropdown.Item name="type" onClick={toggleFilter} >Type</Dropdown.Item>
                         <Dropdown.Item name="gamme" onClick={toggleFilter} >Gamme</Dropdown.Item>
+                        <Dropdown.Divider/>
+                        <Dropdown.Item name="all" onClick={resetList} >Show All</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
-                <Form className={`d-grid gap-1 ${filterVal=="type"?"visible":"d-none"}`}>
-                    <Button variant="outline-success" name="musculation" onClick={handleClick}>Musculation</Button>
-                    <Button variant="outline-success" name="fitness" onClick={handleClick}>Fitness</Button>
-                    <Button variant="outline-success" name="loisir" onClick={handleClick}>Loisirs et Jeux</Button>
+                <Form className={`d-grid gap-1 ${filterVal == "type" ? "visible" : "d-none"}`}>
+                    <Button variant="outline-primary" name="musculation" onClick={handleClick}>Musculation</Button>
+                    <Button variant="outline-primary" name="fitness" onClick={handleClick}>Fitness</Button>
+                    <Button variant="outline-primary" name="loisir" onClick={handleClick}>Loisirs et Jeux</Button>
                 </Form>
 
-                <Form className={`d-grid gap-1 ${filterVal=="gamme"?"visible":"d-none"}`}>
-                    <Button variant="outline-success" name="pro" onClick={handleClickGamme}>Professionnel</Button>
-                    <Button variant="outline-success" name="semipro" onClick={handleClickGamme}>Semi Pro</Button>
+                <Form className={`d-grid gap-1 ${filterVal == "gamme" ? "visible" : "d-none"}`}>
+                    <Button variant="outline-primary" name="pro" onClick={handleClickGamme}>Professionnel</Button>
+                    <Button variant="outline-primary" name="semipro" onClick={handleClickGamme}>Semi Pro</Button>
                 </Form>
 
                 <Form className="d-flex-column ">

@@ -1,0 +1,21 @@
+.decoArticle {
+    margin: 10px;
+    box-shadow: 2px 2px 2px gray;
+    width: 100%;
+  }
+.decoImage {
+  height: 200px;
+  width: 200px!important;
+  background-color: aqua;
+  box-shadow: 1px 1px 10px 1px rgb(146, 144, 255);
+}
+.decoImage:hover {
+  transform: scale(105%);
+}
+.cardFooter{
+    background-color: rgb(255, 255, 255)!important;
+    height: 100%;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    /* padding :0 */
+}

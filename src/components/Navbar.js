@@ -8,7 +8,7 @@ import CartButton from './CartButton';
 function NavbarC() {
     return (
         <>
-            <Navbar bg="light" expand="sm" className="mb-3 sticky-top shadow">
+            <Navbar bg="light" expand="md" className="mb-3 pt-0 sticky-top shadow">
                 <Container fluid>
                     <Link className='btn' to="/">
                         <img src='./images/icons/logo941x1147transparent.png' alt="logo50x60.jpg" height={'30px'} />

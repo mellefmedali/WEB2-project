@@ -11,18 +11,20 @@ import CartDetails from './components/CartDetails';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/sport' element={<Sport />} />
-        <Route path='/sport/cartdetails' element={<CartDetails />} />
-        <Route path='/industrie' element={<Industrie />} />
-        <Route path='/decoration' element={<Decoration />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/*' element={<div>404... Not Found</div>} />
-      </Routes>
-      <Footer/>
+    <div className='container-fluid p-4'>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/sport' element={<Sport />} />
+          <Route path='/sport/cartdetails' element={<CartDetails />} />
+          <Route path='/industrie' element={<Industrie />} />
+          <Route path='/decoration' element={<Decoration />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/*' element={<div>404... Not Found</div>} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 }
