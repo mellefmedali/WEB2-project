@@ -29,10 +29,10 @@ function Home() {
             <Link to='/sport'><div className='subcategorie'>Sport</div></Link>
           </Col>
           <Col className='industrie categorie m-2 rounded-5'>
-            <Link to='/sport'><div className='subcategorie'>Industrie</div></Link>
+            <Link to='/industrie'><div className='subcategorie'>Industrie</div></Link>
           </Col>
           <Col className='decoration categorie  m-2 rounded-5 text-centered'>
-            <Link to='/sport'><div className='subcategorie'>Décoration</div></Link>
+            <Link to='/decoration'><div className='subcategorie'>Décoration</div></Link>
           </Col>
         </Row>
       </Container>

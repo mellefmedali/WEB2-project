@@ -39,9 +39,9 @@ const SportMain = () => {
             <FilterByType />
             <SportCarousel />
             <div className="newsSport">
-                <h6 >
+                <h4 className='text-decoration-underline' >
                     Upcoming Matches
-                </h6>
+                </h4>
                 <News />
             </div>
         </div>
